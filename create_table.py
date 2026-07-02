@@ -1,6 +1,7 @@
-from database import engine, Base
-from models import Book
+# create_tables.py
+from postgre import Base, engine
+import models  # important: ensures Book is registered
+
 
 Base.metadata.create_all(bind=engine)
-
-print("Database tables created successfully.")
+print("Tables created!")
