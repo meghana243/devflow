@@ -9,9 +9,9 @@ from pydantic import BaseModel
 from sqlalchemy import column
 from sqlalchemy.orm import Session
 from datetime import datetime
-from app.database import get_db
+from database import get_db
 from app.models import Board, BoardColumn, Comment, DateTime, Notification, Notification, Organization, Membership, Project, Task, User, ActivityLog
-from app.schemas import OrganizationCreate, OrganizationResponse, ProjectCreate, ProjectResponse, UserCreate, UserResponse, MembershipCreate, MembershipResponse, TaskCreate, TaskResponse, BoardColumnCreate, BoardColumnResponse, ColumnResponse, BoardTasksResponse, CommentResponse, NotificationResponse, NotificationCreate
+from schemas import OrganizationCreate, OrganizationResponse, ProjectCreate, ProjectResponse, UserCreate, UserResponse, MembershipCreate, MembershipResponse, TaskCreate, TaskResponse, BoardColumnCreate, BoardColumnResponse, ColumnResponse, BoardTasksResponse, CommentResponse, NotificationResponse, NotificationCreate
 from fastapi.middleware.cors import CORSMiddleware
 import logging
 
