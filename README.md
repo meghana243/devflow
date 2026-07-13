@@ -315,3 +315,4 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
 These variables control JWT signing, verification, and token expiration while keeping sensitive credentials out of the source code.
+
